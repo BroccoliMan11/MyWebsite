@@ -1,0 +1,1180 @@
+/*All elements with tag 'h1' are affected*/
+h1 {
+    text-align: center;
+    color: red;
+}
+
+/*All elements with id 'id' are affected*/
+#id {
+    text-align: right;
+    color: blue;
+}
+
+/*All elements with class 'class' are affected*/
+.class {
+    text-align: left;
+    color: green;
+}
+
+/*All elements with tag 'h4' and class 'yeetus' are affected */
+h4.yeetus {
+    text-align: end;
+    color: purple;
+}
+
+/*All elements with tag 'h5' and id 'neetus' are affected*/
+h5#neetus {
+    text-align: center;
+    color: magenta;
+}
+
+/*All elements with tag 'h6', 'h7' or 'h8' are affected*/
+h6, h7, h8{
+    text-align: left;
+    color: maroon;
+}
+
+p#one {
+    border-style: dotted;
+    border-width: 5px;
+    color: yellow;
+}
+
+p#two {
+    border-style: dashed;
+    border-width: medium;
+    color: yellow;
+}
+
+p#three {
+    border-style: solid;  
+    border-width:thick;     
+    color:yellow;
+}
+
+p#four {
+    border-style: groove; 
+    border-width:2px;       
+    color:yellow;
+}
+
+p#five {
+    border-style: ridge;  
+    color:yellow;   
+    border-color: red blue green yellow;
+}
+
+p#six {
+    border-style: inset;  
+    color:yellow;
+    border-width: 20px 5px;
+    /*20px for top & bottom 5px for left right*/
+}
+
+p#seven {
+    border-style: outset; 
+    color:yellow;
+    border-width: 25px 10px 4px 35px;
+    /*25px top 10px right 4px bottom 35px left*/
+}
+
+p#eight {
+    border-style: none;   
+    color:yellow;
+}
+
+p#nine {
+    border-style: hidden; 
+    color:yellow
+}
+
+p#ten {
+    border-style: dotted dashed solid double;
+    /*
+        If border style has 4 values
+        top = 1st 
+        right = 2nd
+        bottom = 3rd
+        left = 4th
+
+        If border style has 3 values
+        top = 1st
+        right = 2nd
+        bottom = 3rd
+        left = 2nd
+
+        If border style has 2 values
+        top = 1st
+        right = 2nd
+        bottom = 1st
+        left = 2nd
+
+        If border has 1 value
+        ALL = 1st
+    */
+    color:yellow;
+}
+
+p#eleven {
+    border: 5px solid red;
+    color:yellow;
+    /*border shorthand*/
+}
+
+p#twelve {
+    border-left: 6px solid red;
+    background-color: lightgrey;
+    color: yellow;
+}
+
+p#thirteen {
+    border-bottom: 6px solid red;
+    background-color: lightgrey;
+    color: yellow;
+}
+
+p#fourteen {
+    border: 2px solid red;
+    border-radius: 5px;
+    color: yellow;
+}
+
+p#fifteen {
+    color: yellow;
+    margin: 25px 50px 75px 100px;
+    /*
+        margin 4 values:
+        top = 1st
+        right = 2nd
+        bottom = 3rd
+        left = 4th
+
+        margin 3 values:
+        top = 1st
+        right = 2nd
+        bottom = 3rd
+        left = 2nd
+
+        margin 2 values:
+        top = 1st
+        right = 2nd
+        bottom = 1st
+        left = 2nd
+
+        margin 1 value:
+        ALL = 1st
+    */
+}
+
+div#div_sixteen {
+    width: 300px;
+    margin: auto;
+    border: 1px solid red;
+    color: yellow;
+    /*margin auto: auto centers elements inside container in middle of margins*/
+  }
+
+div#div_seventeen {
+    border: 1px solid red;
+    margin-left: 100px;
+}
+
+p#seventeen {
+    margin: inherit;
+    /*inherits margin properties from container*/
+}
+
+p#eighteen {
+    margin: 0 0 50px 0;
+    color: yellow;
+}
+
+p#nineteen {
+    margin: 20px 0 0 0;
+    color: yellow;
+}
+
+/* 
+    normally would be 20 + 50 px between 
+    but due to margin collapsing, its 50px
+*/ 
+
+p#twenty {
+    padding: 20px;
+    border: red solid 10px;
+    color: yellow;
+}
+
+/*
+    content: contains the inner text
+    border: the border around the content
+    padding : between border and content
+    margin: outside the border
+    outline: between border and margin (not part of object's dimenstions and therefore can overlap)
+*/
+
+div#div_twentyone {
+    width: 300px;
+    padding: 25px;
+    border:red solid 10px;
+    color: yellow;
+}
+
+/*
+    here width of the box, due to 25px padding on all sides will be
+    300 + 25 + 25 = 
+    350px
+*/
+
+div#div_twentytwo {
+    width: 300px;
+    padding: 25px;
+    border:red solid 10px;
+    color: yellow;
+    box-sizing: border-box;
+}
+
+/*
+    box-sizing property is set to border-box
+    width of box remains 300px
+*/
+
+div#div_twentythree {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+}
+
+div#div_twentyfour {
+    height: 100px;
+    width: 500px;
+    background-color: sandybrown;
+}
+
+div#div_twentyfive {
+    max-width: 700px;
+    height: 100px;
+    background-color: cyan;
+}
+
+div#div_twentysix {
+    outline: black solid 3px;
+    border: green solid 5px;
+    
+}
+
+div#div_twentyseven {
+    outline: black solid 3px;
+    border: green solid 5px;
+    outline-offset: 15px;
+}
+
+p#twentyeight {
+   text-decoration: overline;
+}
+
+p#twentynine {
+    text-decoration: line-through;
+    font-style: normal;
+}
+
+p#thirty {
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 30px;
+}
+
+div#div_thirtyone
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 5px;
+}
+
+p#thirtyone {
+    font-size: 10em;
+}
+
+/*
+    Can add multiple to font-family just in case the first font doesn't font
+    then it uses the next one in the list
+*/
+
+/*
+    em is measurement relative to the container:
+    if container's text is 15px and a paragraph's font size
+    is 3em, then the actual font size will be 15 * 3 px
+*/
+
+div#div_thirtytwo {
+    font-size: 100%;
+}
+
+p#thirtytwo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p#thirtythree {
+    font-size: 10vw;
+}
+
+/*
+    viewport is the browser window size. 1 vw = 1% of viewport width
+*/
+
+p#thirtyfour {
+    font-variant: small-caps;
+}
+
+/*
+    Lower case letters are converted to caps
+    but are smaller than letters that are orginally upper case
+*/
+
+a#thirtyfive:link{ /*if link has not been visited*/
+    color: red;
+}
+
+a#thirtyfive:visited{ /*if link has been visited*/
+    color: green;
+}
+
+a#thirtyfive:hover{ /*if mouse is hovering over link*/
+    color: hotpink;
+    text-decoration: none; /*can be used to remove underline*/
+}
+
+a#thirtyfive:active{ /*flashes blue when link is clicked*/
+    color: blue;
+    text-decoration: none;
+}
+
+ul#thirtysix {
+    list-style-type: circle;
+    color:yellowgreen;
+}
+
+ul#thirtyseven {
+    list-style-type: square;
+    color: blue;
+}
+
+ol#thirtyeight {
+    list-style-type: upper-roman;
+    color: red;
+}
+
+ol#thirtynine {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+    color: purple;
+}
+
+ul#forty {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(71, 122, 51);
+}
+
+ol#fortyone {
+    background: #ff9999;
+    padding: 20px;
+}
+
+ol#fortyone li {
+    background: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+ul#fortytwo {
+    background: #3399ff;
+    padding: 20px;
+}
+
+ul#fortytwo li {
+    background: #cce5ff;
+    margin: 5px;
+}
+
+/*Surrounds each box*/
+table#fortythree, table#fortythree th, table#fortythree tr, table#fortythree td {
+    color: magenta;
+    border: 1px solid black;
+}
+
+/*Only surrounds the table*/
+table#fortyfour {
+    color: lime;
+    border: 1px solid black
+}
+
+/*Changing Size of each box*/
+table#fortyfive {
+    color: blue;
+    width: 100%;
+}
+
+table#fortyfive th {
+    height: 50px;
+}
+
+table#fortyfive, table#fortyfive th, table#fortyfive tr, table#fortyfive td {
+    border: 1px solid black;
+}
+
+/*Heading text align to center*/
+table#fortysix {
+    width: 100%;
+}
+
+table#fortysix, table#fortysix th, table#fortysix tr, table#fortysix td {
+    border: 1px solid black;
+}
+
+table#fortysix th {
+    text-align: center;
+}
+
+/*align contents to bottom*/
+
+table#fortyseven, table#fortyseven th, table#fortyseven tr, table#fortyseven td {
+    border: 1px solid black;
+    color: fuchsia;
+}
+
+table#fortyseven td {
+    height: 50px;
+    vertical-align: bottom;
+}
+
+
+/*Padding around contents and heading*/
+
+table#fortyeight, table#fortyeight th, table#fortyeight tr, table#fortyeight td {
+    border: 1px solid black;
+}
+
+table#fortyeight th, table#fortyeight td {
+    padding: 15px;
+    text-align: left;
+    color: honeydew;
+}
+
+/*Horizontal Dividers*/
+
+table#fortynine th, table#fortynine td {
+    border-bottom: 1px solid #ddd;
+}
+
+/*Hoverable*/
+
+table#fifty th, table#fifty td {
+    border-bottom: 1px solid #ddd;
+}
+
+table#fifty tr:hover {
+    background-color: #f5f5f5;
+}
+
+/*Striped*/
+table#fiftyone tr:nth-child(even)
+{
+    background-color: indianred;
+}
+
+table#fiftyone tr:nth-child(odd)
+{
+    background-color: white;
+}
+
+/*Responsive*/
+
+div#div_fiftytwo {
+    overflow-x: auto;
+}
+
+table#fiftytwo {
+    width: 1000px;
+}
+
+div#div_fiftythree {
+    display: inline;
+    /*block will make it so that each link is displayed on seperate lines*/
+}
+
+p#fiftyfour {
+    display: none;
+}
+
+div#div_fiftyfour {
+    background-color: white;
+}
+/*
+    display: none
+    object is hidden and doesnt take up space
+
+    visibility: hiddej
+    object is hidden but takes up space
+*/
+
+div#div_fiftyfive{
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+div#div_fiftysix{
+    position: relative;
+    border: 3px solid blue;
+    left: 30px;
+}
+
+div#div_fiftyseven {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid red;
+    background-color: orange;
+}
+
+div#fiftyeight {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+
+div#div_fiftyeight {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+div#div_fiftynine {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+}
+
+/*
+    Positions:
+    Static = Default position, Not affected by left, right, bottom, top properties
+    Relative: Affected by left, right, bottom , properties
+    Fixed: Same position even when scrolling
+    Absolute: Relative to parent container except if parent container's position is static
+              If there is no parents, then relative to the body
+    Sticky: When scrollbar scrolls pass certain point, its position becomes fixed
+*/
+
+img#img_sixty {
+    position: relative;
+    top: 50px;
+    z-index: -1;
+}
+
+p#sixty {
+    color: white;
+}
+
+div#div_sixtyone {
+    width: 200px;
+    height: 50px;
+    background-color: #eee;
+    overflow: visible;
+    margin-bottom: 300px;
+}
+
+div#div_sixtytwo {
+    width: 200px;
+    height: 50px;
+    background-color: #eee ;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+div#div_sixtythree {
+    width: 200px;
+    height: 100px;
+    background-color: #eee;
+    overflow: scroll;
+    margin-bottom: 10px;
+}
+
+div#div_sixtyfour {
+    width: 200px;
+    height: 100px;
+    background-color: #eee;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+/*
+    Overflow:
+    visible = overflow of text from container is shown (even if its outside of container)
+    hidden = overflow of text from container is hidden
+    scroll = adds scrollbar to see rest of content
+    auto = only provides a scrollbar if its necessary
+*/
+
+img#img_sixtyfive {
+    float: right;
+}
+
+div#div_sixtyfive {
+    border: 3px red solid;
+}
+
+div#div_sixtyfive::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div#div_sixtysix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+div.box_sixtysix {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+
+span.a {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+
+/*
+    Display:
+    Inline: part of the text (width and height dont apply)
+    Inline-block: part of the text (width and height apply)
+    Block: goes new line, part of the text (width and height apply)
+*/
+
+/*
+    'div p' = gets all 'p' elements in 'div'
+    'div > p' = gets all DIRECT children in 'div
+    'div + p' = gets first 'p' after 'div' (EXCLUDES 'p' inside 'div')
+    'div ~ p' = gets all 'p' after 'div' (EXCLUDES 'p' inside 'div')
+*/
+
+/*
+    'div:pseudo-class' = gets the psedo-class of 'div'
+    'div::pseudo-element' gets the pseudo-element of 'div'
+*/
+
+ul#ul_seventy {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+}
+
+ul#ul_seventy li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+ul#ul_seventy li:last-child a {
+    border-bottom: none;
+}
+
+ul#ul_seventy li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul#ul_seventy li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color:#4CAF50;
+    color: white;
+}
+
+ul#ul_seventyone {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul#ul_seventyone li{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+ul#ul_seventyone li:last-child {
+    border-right: none;
+}
+
+ul#ul_seventyone li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul#ul_seventyone li a:hover:not(.active){
+    background-color: #111;
+}
+
+ul#ul_seventyone li.right{
+    float: right;
+}
+
+@media screen and (max-width: 600px){ 
+    ul#ul_seventyone li.right, ul#ul_seventyone li{
+        float: none;
+    }
+}
+
+ul#ul_seventytwo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul#ul_seventytwo li {
+    float: left;
+}
+
+ul#ul_seventytwo li > a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul#ul_seventytwo li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+ul#ul_seventytwo li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+div#dropdown_seventythree {
+    position: relative;
+    display: inline-block;
+  }
+  
+div#dropdown-content_seventythree {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+div#dropdown_seventythree:hover div#dropdown-content_seventythree {
+    display: block;
+  }
+
+button#dropbtn_seventyfour{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+div#dropdown_seventyfour {
+    position: relative;
+    display: inline-block;
+}
+
+div#dropdown-content_seventyfour {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+    z-index: 1;
+}
+
+div#dropdown-content_seventyfour a {
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+div#dropdown-content_seventyfour a:hover {
+    background-color: #f1f1f1;
+}
+
+div#dropdown_seventyfour:hover div#dropdown-content_seventyfour {
+    display: block;
+}
+
+div#dropdown_seventyfour:hover button#dropbtn_seventyfour {
+    background-color: #3e8e41;
+}
+
+div#dropdown_seventyfive {
+    position: relative;
+    display: inline-block;
+}
+
+div#dropdown-content_seventyfive {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+div#dropdown_seventyfive:hover div#dropdown-content_seventyfive {
+    display: block;
+}
+
+div#desc_seventyfive {
+    padding: 15px;
+    text-align: center;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.responsive {
+    box-sizing: border-box;
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    div.responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    div.responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#navlist {
+    position: relative;
+}
+
+#navlist li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#navlist li, #navlist a {
+    height: 44px;
+    display: block;
+}
+
+#home {
+    left: 0px;
+    width: 46px;
+    background: url(images/img_navsprites.gif) 0 0;
+}
+
+#prev {
+    left: 63px;
+    width: 43px;
+    background: url(images/img_navsprites.gif) -47px 0;
+}
+
+#next {
+    left: 129px;
+    width: 43px;
+    background: url(images/img_navsprites.gif) -91px 0; /*position in sprite map*/
+}
+
+#home a:hover {
+    background: url(images/img_navsprites_hover.gif) 0 -45px;
+}
+
+#prev a:hover {
+    background: url(images/img_navsprites_hover.gif) -47px -45px;
+}
+
+#next a:hover {
+    background: url(images/img_navsprites_hover.gif) -91px -45px;
+}
+
+/*
+    Attribute Selectors:
+    a[target] = selects all 'a' elements with 'target' attribute
+    a[target="_blank"] = selects all 'a' elements with 'target' attribute with value "_blank"
+    [title~="flower"] = selects all elements with 'title' attribute with value that contains
+                        "flower" text somewhere (value must be a word)
+    [class|="top"] = selects all elements with 'class' attribute with value either "top" or "top- + [more text]"
+    [class^="top"] = selects all elements with 'class'attribute with value that starts with "top"
+                    (value isn't required to be a word)
+    [class$="test"] = selects all elements with 'class' attribute with value that ends with "test"
+                    (value isn't required to be a word)
+    [class*="te"] = selects all elements with 'class' attribute with value that contains "te"
+                    (unlike '~=' doesn't have to be a word)
+*/
+
+div#seventyeight input[type=text], div#seventyeight select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+div#seventyeight input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+div#seventyeight input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+div#seventyeight input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div#seventyeight {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input#seventynine[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(images/searchicon.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+}
+
+input#seventynine[type=text]:focus {
+    width: 100%;
+}
+
+textarea#eighty {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;;
+}
+
+div#eightyone {
+    background-color: white;
+    counter-reset: section;
+}
+
+div#eightyone p::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+}
+
+div#eightytwo {
+    counter-reset: section;
+    background-color: white;
+}
+
+div#eightytwo h1 {
+    counter-reset: subsection;
+    text-align: left;
+}
+
+h1::before {
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+}
+
+h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+
+ol {
+    list-style-type: none;
+    background-color: white;
+    counter-reset: section;
+}
+
+ol#eightythree li::before {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+}
+
+/*
+    Units:
+
+    Absolute Lengths:
+    cm = centimeters
+    mm = milimeters
+    in = inches (1in = 96px = 2.54 cm)
+    px * pixels (1px = 1/96th of 1in)
+    pt = points (1pt = 1/72 of 1in)
+    pc = picas (1pc = 12pt)
+
+    *pixels (px) are relative to the viewing device
+
+    Relative Lengths:
+    em = relative to the font-size of element
+    ex = relative to the x-height of the current font
+    ch = relative to the width of "0"
+    rem = relative to font-size of the root element
+    vw = relative to 1% of the width of the viewport
+    vh = relative to 1% of the height of the viewport
+    vmin = relative to 1% of viewport's smaller dimension (uses width if width is smaller than height and vice versa)
+    vmax = relative to 1% of viewport's larger dimension (uses width if width is larger than height and vice versa)
+    % = relative to the parent element
+*/
+
+/*
+    Specificity:
+    If there are two or more conflicting CSS rules that point to the same element, the browser
+    follows some rules to determine which one is most specific and therefore wins out
+
+    Heirarachy:
+    1. Inline styles
+    2. IDs
+    3. Classes, attributes and pseudo-classes
+    4. Elements and pseudo-elements
+
+    How to Calculate:
+
+    Start at 0
+    Add 1000 for style attribute
+    Add 100 for each ID
+    Add 10 for each attribute, class or pseudo-class
+    Add 1 for each element name or pseudo-element
+
+    If same specifity, the last CSS rule is applied
+
+    If rule exists in CSS file, than the CSS rule in the html, will win out
+
+    selecter "*" 
+
+
+*/
+
+
